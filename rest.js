@@ -27,3 +27,19 @@ const sumRest = (a,b,...best) => { //best can be any word
 
 let sum3 = sumRest(1,2,3,4,5,6,7,8,9,10);
 console.log("Sum3:", sum3)
+
+// Rest Parameter Challenge
+
+let mixedLetters = ['b', 'd', 'a', 'c', 'f', 'e'];
+
+let moreMixedLetters = [...mixedLetters, 'h', 'k', 'g', 'j', 'i', 'l'];
+console.log(moreMixedLetters);
+
+const updateSortReverse = (arr, ...letters) => {
+    let newArray = [...arr, ...letters].sort().reverse();
+    return newArray;
+}
+let reverseSort = updateSortReverse(moreMixedLetters, 'n', 'm', 'o');
+
+console.log(reverseSort);
+console.log(mixedLetters);
