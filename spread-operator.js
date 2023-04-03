@@ -1,6 +1,8 @@
 /**
  * To run this file in Gitpod, use the 
  * command node spread-operator.js in the terminal
+ * 
+ * A spread operator can break an array into its individual elements
  */
 
 // No spread operator
@@ -9,6 +11,7 @@ let arr2 = arr1;
 arr2.push(4);
 console.log("Second Array:", arr2)
 console.log("First Array:", arr1)
+
 // Copying an array
 let arr3 = [4, 5, 6];
 let arr4 = [...arr3];
